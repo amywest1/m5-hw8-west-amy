@@ -22,6 +22,14 @@ boxes.forEach(function(button) {
 function chosenBox(event) {
     var boxNumber = event.target.textContent
     parseInt(boxNumber)
+    var winBox = Math.floor((Math.random() * 3) + 1);
+    if (boxNumber == winBox) {
+        winCount += 1;
+        // if the numbers match, display a winning message by changing the text content of the div#message element
+    } else {
+        lossCount += 1;
+        // if the numbers don't match, change the div#message element's text to a random losing message from the array above
+    }
 }
 // within each click event...
 // determine which box was clicked with 'this.textContent' or event.target.textContent
