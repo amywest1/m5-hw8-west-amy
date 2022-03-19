@@ -68,6 +68,15 @@ main p {
   box-shadow: 8px 8px 8px lightgrey;
 }
 
+.score {
+  display: flex;
+  justify-content: center;
+}
+
+#wins {
+  margin-right: 2rem;
+}
+
 @media only screen and (min-width: 600px)  {
   .boxes {
     display: flex;
